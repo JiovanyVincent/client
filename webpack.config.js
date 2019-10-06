@@ -19,6 +19,8 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ],
+                test: /\.svg$/,
+                use: ['@svgr/webpack'],
                 test: /\.jsx?$/,
                 exclude: /(node-modules)/,
                 use: {

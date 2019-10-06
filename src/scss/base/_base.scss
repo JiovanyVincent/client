@@ -1,0 +1,14 @@
+// Style of all HTML tags default
+@import '../tools/variables';
+
+body {
+    margin: 0;
+    background-color: $bg-body;
+    font-family: $ff-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: $ff-code;
+  }
