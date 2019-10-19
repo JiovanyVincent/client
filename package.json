@@ -1,7 +1,7 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
-  "description": "An application who show the weather in few countries, cities, areas that you want in real time.",
+  "description": "",
   "main": "index.js",
   "author": "Jiovany VINCENT",
   "license": "MIT",
