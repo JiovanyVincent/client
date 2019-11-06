@@ -1,21 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import titreOazen from '../assets/titreoazenlast.png';
+
+export const ColorLink = {
+    color: "#1b67bc",
+    fontWeight: "bold",
+    fontFamily: "Source Sans Pro, sans-serif"
+}
 
 export function Navbar() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light ">
-        <Link style={{color: '#1b67bc'}} class="navbar-brand" to="/dashoard">OAZEN</Link>
+        <Link class="navbar-brand" to="/dashoard"><img src={titreOazen} alt="titre oazen"/></Link>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav ">
-                <li class="nav-item active">
-                <Link class="nav-link" to="#">Generation de code</Link>
+                <li className="nav-item">
+                <Link style={ColorLink} className="link nav-link" to="/dashboard">Generation de code</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="#">Gestion des utilisateurs</Link>
+                <li className="nav-item">
+                <Link style={ColorLink} className="nav-link" to="/gestion-utilisateur">Gestion des utilisateurs</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="#">Indication des entreprises</Link>
+                <li className="nav-item">
+                <Link style={ColorLink} className="nav-link" to="/indication-entreprise">Indication des entreprises</Link>
                 </li>
             </ul>
         </div>
