@@ -4,6 +4,7 @@ import './scss/style.scss';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
